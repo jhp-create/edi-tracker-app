@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import './style/index.css';
 
 const Root = () => {
   return (
     <div>
-      Hello World
+      <h1>Hello World</h1>
     </div>
   );
 };

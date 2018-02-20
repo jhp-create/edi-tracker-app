@@ -11,8 +11,21 @@ module.exports = {
     rules: [
       {
         use: 'babel-loader',
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/
+      },
+      {
+        test: /\.(ts|tsx)?$/, 
+        loader: "awesome-typescript-loader",
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/, 
+        loader: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/, 
+        use: ["file-loader"]
       }
     ]
   },
